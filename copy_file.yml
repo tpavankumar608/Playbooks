@@ -1,0 +1,10 @@
+---
+- name: copying a file
+  hosts: webservers
+  become: yes
+  tasks:
+  - name: copying a file 
+    copy: 
+     src: /home/ansadmin/index.html
+     dest: /home/ansadmin
+
